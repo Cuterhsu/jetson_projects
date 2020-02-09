@@ -1,0 +1,167 @@
+01:42:18 **** Incremental Build of configuration Debug for project particles_1 ****
+make all 
+Building target: particles_1
+Invoking: NVCC linker
+/usr/local/cuda/bin/nvcc --cudart=static -L/usr/local/cuda-10.0/lib64 -L/usr/local/cuda-10.0/samples/common/lib/linux/aarch64 -L/usr/local/cuda-10.0/lib64/stubs -ccbin aarch64-linux-gnu-g++ -Xlinker --unresolved-symbols=ignore-in-shared-libs -gencode arch=compute_30,code=sm_30 -gencode arch=compute_30,code=compute_30 -o "particles_1"  ./src/particleSystem.o ./src/particleSystem_cuda.o ./src/particles.o ./src/render_particles.o ./src/shaders.o   
+/usr/lib/gcc-cross/aarch64-linux-gnu/7/../../../../aarch64-linux-gnu/bin/ld: skipping incompatible /usr/local/cuda-10.0/lib64/libcudadevrt.a when searching for -lcudadevrt
+/usr/lib/gcc-cross/aarch64-linux-gnu/7/../../../../aarch64-linux-gnu/bin/ld: skipping incompatible /usr/local/cuda-10.0/lib64/libcudart_static.a when searching for -lcudart_static
+./src/particleSystem.o: In function `__HelperGL::__Int::getGLExtensions()':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:154: undefined reference to `glGetString'
+./src/particleSystem.o: In function `__HelperGL::isGLVersionSupported(unsigned int, unsigned int)':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:178: undefined reference to `glGetString'
+./src/particles.o: In function `__HelperGL::__Int::getGLExtensions()':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:154: undefined reference to `glGetString'
+./src/particles.o: In function `__HelperGL::isGLVersionSupported(unsigned int, unsigned int)':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:178: undefined reference to `glGetString'
+./src/particles.o: In function `initGL(int*, char**)':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:156: undefined reference to `glutInit'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:157: undefined reference to `glutInitDisplayMode'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:158: undefined reference to `glutInitWindowSize'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:159: undefined reference to `glutCreateWindow'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:178: undefined reference to `glEnable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:179: undefined reference to `glClearColor'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:181: undefined reference to `glutReportErrors'
+./src/particles.o: In function `computeFPS()':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:230: undefined reference to `glutSetWindowTitle'
+./src/particles.o: In function `display()':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:262: undefined reference to `glClear'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:265: undefined reference to `glMatrixMode'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:266: undefined reference to `glLoadIdentity'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:274: undefined reference to `glTranslatef'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:275: undefined reference to `glRotatef'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:276: undefined reference to `glRotatef'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:278: undefined reference to `glGetFloatv'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:281: undefined reference to `glColor3f'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:282: undefined reference to `glutWireCube'
+makefile:24: recipe for target 'particles_1' failed
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:285: undefined reference to `glPushMatrix'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:287: undefined reference to `glTranslatef'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:288: undefined reference to `glColor3f'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:289: undefined reference to `glutSolidSphere'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:290: undefined reference to `glPopMatrix'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:299: undefined reference to `glDisable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:300: undefined reference to `glBlendFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:301: undefined reference to `glEnable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:303: undefined reference to `glDisable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:304: undefined reference to `glEnable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:309: undefined reference to `glutSwapBuffers'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:310: undefined reference to `glutReportErrors'
+./src/particles.o: In function `reshape(int, int)':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:336: undefined reference to `glMatrixMode'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:337: undefined reference to `glLoadIdentity'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:338: undefined reference to `gluPerspective'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:340: undefined reference to `glMatrixMode'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:341: undefined reference to `glViewport'
+./src/particles.o: In function `mouse(int, int, int, int)':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:363: undefined reference to `glutGetModifiers'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:384: undefined reference to `glutPostRedisplay'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:389: undefined reference to `glutPostRedisplay'
+./src/particles.o: In function `motion(int, int)':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:430: undefined reference to `glutPostRedisplay'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:497: undefined reference to `glutPostRedisplay'
+./src/particles.o: In function `key(unsigned char, int, int)':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:524: undefined reference to `glutGetWindow'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:524: undefined reference to `glutDestroyWindow'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:597: undefined reference to `glutPostRedisplay'
+./src/particles.o: In function `idle()':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:631: undefined reference to `glutPostRedisplay'
+./src/particles.o: In function `initMenus()':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:670: undefined reference to `glutCreateMenu'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:671: undefined reference to `glutAddMenuEntry'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:672: undefined reference to `glutAddMenuEntry'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:673: undefined reference to `glutAddMenuEntry'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:674: undefined reference to `glutAddMenuEntry'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:675: undefined reference to `glutAddMenuEntry'
+./src/particles.o:/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:676: more undefined references to `glutAddMenuEntry' follow
+./src/particles.o: In function `initMenus()':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:681: undefined reference to `glutAttachMenu'
+./src/particles.o: In function `main':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:772: undefined reference to `glutDisplayFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:773: undefined reference to `glutReshapeFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:774: undefined reference to `glutMouseFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:775: undefined reference to `glutMotionFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:776: undefined reference to `glutKeyboardFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:777: undefined reference to `glutSpecialFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:778: undefined reference to `glutIdleFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:780: undefined reference to `glutCloseFunc'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/particles.cpp:782: undefined reference to `glutMainLoop'
+./src/particles.o: In function `__static_initialization_and_destruction_0(int, int)':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:51: undefined reference to `glXGetProcAddress'
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:52: undefined reference to `glXGetProcAddress'
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:53: undefined reference to `glXGetProcAddress'
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:54: undefined reference to `glXGetProcAddress'
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:55: undefined reference to `glXGetProcAddress'
+./src/particles.o:/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:56: more undefined references to `glXGetProcAddress' follow
+./src/particles.o: In function `beginWinCoords()':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:32: undefined reference to `glMatrixMode'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:33: undefined reference to `glPushMatrix'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:34: undefined reference to `glLoadIdentity'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:35: undefined reference to `glutGet'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:35: undefined reference to `glTranslatef'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:36: undefined reference to `glScalef'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:38: undefined reference to `glMatrixMode'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:39: undefined reference to `glPushMatrix'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:40: undefined reference to `glLoadIdentity'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:41: undefined reference to `glutGet'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:41: undefined reference to `glutGet'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:41: undefined reference to `glOrtho'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:43: undefined reference to `glMatrixMode'
+./src/particles.o: In function `endWinCoords()':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:48: undefined reference to `glMatrixMode'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:49: undefined reference to `glPopMatrix'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:51: undefined reference to `glMatrixMode'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:52: undefined reference to `glPopMatrix'
+./src/particles.o: In function `glPrint(int, int, char const*, void*)':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:57: undefined reference to `glRasterPos2f'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:62: undefined reference to `glutBitmapCharacter'
+./src/particles.o: In function `glPrintShadowed(int, int, char const*, void*, float*)':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:68: undefined reference to `glColor3f'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:71: undefined reference to `glColor3fv'
+./src/particles.o: In function `ParamListGL::ParamListGL(char const*)':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:87: undefined reference to `glutBitmap9By15'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:87: undefined reference to `glutBitmap9By15'
+./src/particles.o: In function `ParamListGL::Render(int, int, bool)':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:119: undefined reference to `glColor3fv'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:123: undefined reference to `glColor3fv'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:137: undefined reference to `glColor3fv'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:138: undefined reference to `glBegin'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:139: undefined reference to `glVertex2f'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:140: undefined reference to `glVertex2f'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:141: undefined reference to `glVertex2f'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:142: undefined reference to `glVertex2f'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:143: undefined reference to `glEnd'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:145: undefined reference to `glColor3fv'
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:146: undefined reference to `glRectf'
+./src/particles.o: In function `ParamListGL::Special(int, int, int)':
+/usr/local/cuda-10.0/samples/common/inc/paramgl.h:243: undefined reference to `glutPostRedisplay'
+./src/render_particles.o: In function `__HelperGL::__Int::getGLExtensions()':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:154: undefined reference to `glGetString'
+./src/render_particles.o: In function `__HelperGL::isGLVersionSupported(unsigned int, unsigned int)':
+/usr/local/cuda-10.0/samples/common/inc/helper_gl.h:178: undefined reference to `glGetString'
+./src/render_particles.o: In function `ParticleRenderer::_drawPoints()':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:62: undefined reference to `glBegin'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:68: undefined reference to `glVertex3fv'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:72: undefined reference to `glEnd'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:77: undefined reference to `glVertexPointer'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:78: undefined reference to `glEnableClientState'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:83: undefined reference to `glColorPointer'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:84: undefined reference to `glEnableClientState'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:87: undefined reference to `glDrawArrays'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:90: undefined reference to `glDisableClientState'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:91: undefined reference to `glDisableClientState'
+./src/render_particles.o: In function `ParticleRenderer::display(ParticleRenderer::DisplayMode)':
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:100: undefined reference to `glColor3f'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:101: undefined reference to `glPointSize'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:107: undefined reference to `glEnable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:108: undefined reference to `glTexEnvi'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:109: undefined reference to `glEnable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:110: undefined reference to `glDepthMask'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:111: undefined reference to `glEnable'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:117: undefined reference to `glColor3f'
+/home/cuter/jetson_workspace/particles_1/Debug/../src/render_particles.cpp:121: undefined reference to `glDisable'
+collect2: error: ld returned 1 exit status
+make: *** [particles_1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+01:42:19 Build Failed. 128 errors, 0 warnings. (took 369ms)
+

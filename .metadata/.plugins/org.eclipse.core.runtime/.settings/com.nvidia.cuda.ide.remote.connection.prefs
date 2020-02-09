@@ -1,0 +1,5 @@
+connection.cuterbot.com.nvidia.cuda.ide.build.core.Cpu=ARMv8
+connection.cuterbot.default_sync_project_location=/home/cuterbot/sync_projects
+connection.cuterbot.remote.port=2345
+eclipse.preferences.version=1
+last.connection=cuterbot

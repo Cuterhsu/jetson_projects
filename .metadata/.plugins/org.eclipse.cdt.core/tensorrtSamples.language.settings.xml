@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="com.nvidia.cuda.ide.toolchain.nine_zero.643308345" name="Default">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="org.eclipse.cdt.managedbuilder.core.GCCBuildCommandParser">
+				<language id="org.eclipse.cdt.core.g++">
+					<resource project-relative-path="samples/trtexec/trtexec.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/trtexec">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/samplePlugin/samplePlugin.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/samplePlugin">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/lstmEncoder.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/benchmarkWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleSSD/sampleSSD.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleSSD">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/sampleNMT.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMovieLens/sampleMovieLens.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMovieLens">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleFasterRCNN/sampleFasterRCNN.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleFasterRCNN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/limitedSamplesDataReader.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleUffPluginV2Ext/sampleUffPluginV2Ext.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleUffPluginV2Ext">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/dataWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleUffSSD/sampleUffSSD.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleUffSSD">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/debugUtil.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleUffMNIST/sampleUffMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleUffMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/contextNMT.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleGoogleNet/sampleGoogleNet.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleGoogleNet">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/componentWeights.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleINT8/sampleINT8.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleINT8">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleReformatFreeIO/sampleReformatFreeIO.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleReformatFreeIO">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMLP/sampleMLP.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMLP">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMNISTAPI/sampleMNISTAPI.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMNISTAPI">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/lstmDecoder.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/slpProjection.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleCharRNN/sampleCharRNN.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleCharRNN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/softmaxLikelihood.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/trtUtil.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleOnnxMNIST/sampleOnnxMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleOnnxMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/textReader.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/multiplicativeAlignment.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/beamSearchPolicy.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/slpAttention.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/textWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/vocabulary.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleINT8API/sampleINT8API.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleINT8API">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleDynamicReshape/sampleDynamicReshape.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleDynamicReshape">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/bleuScoreWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/slpEmbedder.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMNIST/sampleMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value="1"/>
+					</resource>
+				</language>
+				<language id="org.eclipse.cdt.core.gpp">
+					<resource project-relative-path="samples/trtexec/trtexec.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/trtexec">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/common/logger.cpp">
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/common"/>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/include"/>
+						<entry kind="includePath" name="/home/cuter/include"/>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/samplePlugin/samplePlugin.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/samplePlugin">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/lstmEncoder.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/benchmarkWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleSSD/sampleSSD.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleSSD">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/sampleNMT.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMovieLens/sampleMovieLens.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMovieLens">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleFasterRCNN/sampleFasterRCNN.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleFasterRCNN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/limitedSamplesDataReader.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleUffPluginV2Ext/sampleUffPluginV2Ext.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleUffPluginV2Ext">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/dataWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleUffSSD/sampleUffSSD.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleUffSSD">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/debugUtil.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleUffMNIST/sampleUffMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleUffMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/contextNMT.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleGoogleNet/sampleGoogleNet.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleGoogleNet">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/componentWeights.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleINT8/sampleINT8.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleINT8">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleReformatFreeIO/sampleReformatFreeIO.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleReformatFreeIO">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMLP/sampleMLP.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMLP">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMNISTAPI/sampleMNISTAPI.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMNISTAPI">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/lstmDecoder.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/slpProjection.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleCharRNN/sampleCharRNN.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleCharRNN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/softmaxLikelihood.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/trtUtil.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/common/sampleOptions.cpp">
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/common"/>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/include"/>
+						<entry kind="includePath" name="/home/cuter/include"/>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleOnnxMNIST/sampleOnnxMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleOnnxMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/textReader.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/multiplicativeAlignment.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/common/getOptions.cpp">
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/common"/>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/include"/>
+						<entry kind="includePath" name="/home/cuter/include"/>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/beamSearchPolicy.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/slpAttention.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/common/sampleEngines.cpp">
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/common"/>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/home/cuter/jetson_workspace/include"/>
+						<entry kind="includePath" name="/home/cuter/include"/>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/textWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/vocabulary.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleINT8API/sampleINT8API.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleINT8API">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleDynamicReshape/sampleDynamicReshape.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleDynamicReshape">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/data/bleuScoreWriter.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleNMT/model/slpEmbedder.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleNMT">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+					<resource project-relative-path="samples/sampleMNIST/sampleMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value=""/>
+					</resource>
+				</language>
+				<language id="com.nvidia.cuda.toolchain.language.cuda.c++">
+					<resource project-relative-path="samples/sampleCharRNN/sampleCharRNN.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleCharRNN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value="1"/>
+					</resource>
+					<resource project-relative-path="samples/sampleMNIST/sampleMNIST.cpp">
+						<entry kind="includePath" name="/${ProjName}/samples/common">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/usr/local/cuda-10.0/targets/x86_64-linux/include"/>
+						<entry kind="includePath" name="/${ProjName}/samples/sampleMNIST">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/samples/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="_REENTRANT" value="1"/>
+					</resource>
+				</language>
+			</provider>
+			<provider id="org.eclipse.cdt.build.crossgcc.CrossGCCBuiltinSpecsDetector"/>
+		</extension>
+	</configuration>
+</project>

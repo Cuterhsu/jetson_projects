@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;sync_hw/makefile&apos; to &apos;Makefile&apos;" description="Rename resource &apos;makefile&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="makefile" name="Makefile" stamp="1579833966039" updateReferences="true"/>
+</session>

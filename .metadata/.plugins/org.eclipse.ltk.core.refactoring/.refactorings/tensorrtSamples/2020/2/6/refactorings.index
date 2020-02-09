@@ -1,0 +1,6 @@
+1580860296347	Rename resource 'train-images.idx3-ubyte'
+1580860306969	Rename resource 'train-labels.idx1-ubyte'
+1580862058075	Rename resource 'ResNet50.onnx'
+1580873771792	Rename resource 'ssd.prototxt'
+1580873803825	Rename resource 'deploy.prototxt'
+1580921526631	Rename resource 'deploy.prototxt'

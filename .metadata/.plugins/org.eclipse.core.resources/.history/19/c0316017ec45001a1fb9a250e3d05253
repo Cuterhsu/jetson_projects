@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../samples/common/getOptions.cpp \
+../samples/common/logger.cpp \
+../samples/common/sampleEngines.cpp \
+../samples/common/sampleOptions.cpp 
+
+OBJS += \
+./samples/common/getOptions.o \
+./samples/common/logger.o \
+./samples/common/sampleEngines.o \
+./samples/common/sampleOptions.o 
+
+CPP_DEPS += \
+./samples/common/getOptions.d \
+./samples/common/logger.d \
+./samples/common/sampleEngines.d \
+./samples/common/sampleOptions.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+samples/common/%.o: ../samples/common/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

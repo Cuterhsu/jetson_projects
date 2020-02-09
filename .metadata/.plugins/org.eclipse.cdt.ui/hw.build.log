@@ -1,0 +1,19 @@
+01:02:21 **** Incremental Build of configuration Debug for project hw ****
+make all -C /home/cuterbot/sync_projects/hw/Debug 
+make: Entering directory '/home/cuterbot/sync_projects/hw/Debug'
+Building file: ../src/hw.cpp
+Invoking: NVCC Compiler
+/usr/local/cuda-10.0/bin/nvcc -G -g -O0 -ccbin aarch64-linux-gnu-g++  -m64 -odir "src" -M -o "src/hw.d" "../src/hw.cpp"
+/usr/local/cuda-10.0/bin/nvcc -G -g -O0 --compile -m64 -ccbin aarch64-linux-gnu-g++  -x c++ -o  "src/hw.o" "../src/hw.cpp"
+Finished building: ../src/hw.cpp
+ 
+Building target: hw
+Invoking: NVCC Linker
+/usr/local/cuda-10.0/bin/nvcc --cudart static --relocatable-device-code=false -m64 -ccbin aarch64-linux-gnu-g++ -link -o  "hw"  ./src/hw.o   
+Finished building target: hw
+ 
+make: Leaving directory '/home/cuterbot/sync_projects/hw/Debug'
+> Shell Completed (exit code = 0)
+
+01:02:23 Build Finished (took 1s.812ms)
+

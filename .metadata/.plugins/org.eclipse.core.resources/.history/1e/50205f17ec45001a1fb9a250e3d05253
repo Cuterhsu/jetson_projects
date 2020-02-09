@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../bin/dchobj/sampleCharRNN.o \
+../bin/dchobj/sampleDynamicReshape.o \
+../bin/dchobj/sampleFasterRCNN.o \
+../bin/dchobj/sampleGoogleNet.o \
+../bin/dchobj/sampleINT8.o \
+../bin/dchobj/sampleINT8API.o \
+../bin/dchobj/sampleMLP.o \
+../bin/dchobj/sampleMNIST.o \
+../bin/dchobj/sampleMNISTAPI.o \
+../bin/dchobj/sampleMovieLens.o \
+../bin/dchobj/sampleNMT.o \
+../bin/dchobj/sampleOnnxMNIST.o \
+../bin/dchobj/samplePlugin.o \
+../bin/dchobj/sampleReformatFreeIO.o \
+../bin/dchobj/sampleSSD.o \
+../bin/dchobj/sampleUffMNIST.o \
+../bin/dchobj/sampleUffPluginV2Ext.o \
+../bin/dchobj/sampleUffSSD.o \
+../bin/dchobj/trtUtil.o \
+../bin/dchobj/trtexec.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

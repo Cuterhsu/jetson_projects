@@ -1,0 +1,546 @@
+01:14:30 **** Build of configuration Default for project tensorrtSamples ****
+make all -C /home/cuterbot/sync_projects/tensorrtSamples 
+make: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples'
+cd samples && make
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples'
+make -C sampleCharRNN &&  make -C sampleDynamicReshape &&  make -C sampleFasterRCNN &&  make -C sampleGoogleNet &&  make -C sampleINT8 &&  make -C sampleINT8API &&  make -C sampleMLP &&  make -C sampleMNIST &&  make -C sampleMNISTAPI &&  make -C sampleMovieLens &&  make -C sampleOnnxMNIST &&  make -C samplePlugin &&  make -C sampleUffPluginV2Ext &&  make -C sampleReformatFreeIO &&  make -C sampleSSD &&  make -C sampleUffMNIST &&  make -C sampleUffSSD &&  make -C trtexec &&  make -C sampleNMT && :
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleCharRNN'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleCharRNN.d -MP -MT ../../bin/dchobj/sampleCharRNN.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleCharRNN.cpp
+Compiling: sampleCharRNN.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleCharRNN.o sampleCharRNN.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/../common/sampleOptions.d -MP -MT ../../bin/dchobj/../common/sampleOptions.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT ../common/sampleOptions.cpp
+Compiling: ../common/sampleOptions.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/../common/sampleOptions.o ../common/sampleOptions.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/../common/logger.d -MP -MT ../../bin/dchobj/../common/logger.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT ../common/logger.cpp
+Compiling: ../common/logger.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/../common/logger.o ../common/logger.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/../common/getOptions.d -MP -MT ../../bin/dchobj/../common/getOptions.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT ../common/getOptions.cpp
+Compiling: ../common/getOptions.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/../common/getOptions.o ../common/getOptions.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/../common/sampleEngines.d -MP -MT ../../bin/dchobj/../common/sampleEngines.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT ../common/sampleEngines.cpp
+Compiling: ../common/sampleEngines.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/../common/sampleEngines.o ../common/sampleEngines.cpp
+Linking: ../../bin/sample_char_rnn_debug
+g++ -o ../../bin/sample_char_rnn_debug ../../bin/dchobj/sampleCharRNN.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleCharRNN.d -MP -MT ../../bin/chobj/sampleCharRNN.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleCharRNN.cpp
+Compiling: sampleCharRNN.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleCharRNN.o sampleCharRNN.cpp
+Linking: ../../bin/sample_char_rnn
+g++ -o ../../bin/sample_char_rnn ../../bin/chobj/sampleCharRNN.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleCharRNN'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleDynamicReshape'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleDynamicReshape.d -MP -MT ../../bin/dchobj/sampleDynamicReshape.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleDynamicReshape.cpp
+Compiling: sampleDynamicReshape.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleDynamicReshape.o sampleDynamicReshape.cpp
+Linking: ../../bin/sample_dynamic_reshape_debug
+g++ -o ../../bin/sample_dynamic_reshape_debug ../../bin/dchobj/sampleDynamicReshape.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleDynamicReshape.d -MP -MT ../../bin/chobj/sampleDynamicReshape.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleDynamicReshape.cpp
+Compiling: sampleDynamicReshape.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleDynamicReshape.o sampleDynamicReshape.cpp
+Linking: ../../bin/sample_dynamic_reshape
+g++ -o ../../bin/sample_dynamic_reshape ../../bin/chobj/sampleDynamicReshape.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleDynamicReshape'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleFasterRCNN'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleFasterRCNN.d -MP -MT ../../bin/dchobj/sampleFasterRCNN.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleFasterRCNN.cpp
+Compiling: sampleFasterRCNN.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleFasterRCNN.o sampleFasterRCNN.cpp
+Linking: ../../bin/sample_fasterRCNN_debug
+g++ -o ../../bin/sample_fasterRCNN_debug ../../bin/dchobj/sampleFasterRCNN.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleFasterRCNN.d -MP -MT ../../bin/chobj/sampleFasterRCNN.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleFasterRCNN.cpp
+Compiling: sampleFasterRCNN.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleFasterRCNN.o sampleFasterRCNN.cpp
+Linking: ../../bin/sample_fasterRCNN
+g++ -o ../../bin/sample_fasterRCNN ../../bin/chobj/sampleFasterRCNN.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleFasterRCNN'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleGoogleNet'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleGoogleNet.d -MP -MT ../../bin/dchobj/sampleGoogleNet.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleGoogleNet.cpp
+Compiling: sampleGoogleNet.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleGoogleNet.o sampleGoogleNet.cpp
+Linking: ../../bin/sample_googlenet_debug
+g++ -o ../../bin/sample_googlenet_debug ../../bin/dchobj/sampleGoogleNet.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleGoogleNet.d -MP -MT ../../bin/chobj/sampleGoogleNet.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleGoogleNet.cpp
+Compiling: sampleGoogleNet.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleGoogleNet.o sampleGoogleNet.cpp
+Linking: ../../bin/sample_googlenet
+g++ -o ../../bin/sample_googlenet ../../bin/chobj/sampleGoogleNet.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleGoogleNet'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleINT8.d -MP -MT ../../bin/dchobj/sampleINT8.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleINT8.cpp
+Compiling: sampleINT8.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleINT8.o sampleINT8.cpp
+Linking: ../../bin/sample_int8_debug
+g++ -o ../../bin/sample_int8_debug ../../bin/dchobj/sampleINT8.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleINT8.d -MP -MT ../../bin/chobj/sampleINT8.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleINT8.cpp
+Compiling: sampleINT8.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleINT8.o sampleINT8.cpp
+Linking: ../../bin/sample_int8
+g++ -o ../../bin/sample_int8 ../../bin/chobj/sampleINT8.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8API'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleINT8API.d -MP -MT ../../bin/dchobj/sampleINT8API.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleINT8API.cpp
+Compiling: sampleINT8API.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleINT8API.o sampleINT8API.cpp
+Linking: ../../bin/sample_int8_api_debug
+g++ -o ../../bin/sample_int8_api_debug ../../bin/dchobj/sampleINT8API.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleINT8API.d -MP -MT ../../bin/chobj/sampleINT8API.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleINT8API.cpp
+Compiling: sampleINT8API.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleINT8API.o sampleINT8API.cpp
+Linking: ../../bin/sample_int8_api
+g++ -o ../../bin/sample_int8_api ../../bin/chobj/sampleINT8API.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8API'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMLP'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleMLP.d -MP -MT ../../bin/dchobj/sampleMLP.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMLP.cpp
+Compiling: sampleMLP.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleMLP.o sampleMLP.cpp
+Linking: ../../bin/sample_mlp_debug
+g++ -o ../../bin/sample_mlp_debug ../../bin/dchobj/sampleMLP.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleMLP.d -MP -MT ../../bin/chobj/sampleMLP.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMLP.cpp
+Compiling: sampleMLP.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleMLP.o sampleMLP.cpp
+Linking: ../../bin/sample_mlp
+g++ -o ../../bin/sample_mlp ../../bin/chobj/sampleMLP.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMLP'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleMNIST.d -MP -MT ../../bin/dchobj/sampleMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMNIST.cpp
+Compiling: sampleMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleMNIST.o sampleMNIST.cpp
+Linking: ../../bin/sample_mnist_debug
+g++ -o ../../bin/sample_mnist_debug ../../bin/dchobj/sampleMNIST.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleMNIST.d -MP -MT ../../bin/chobj/sampleMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMNIST.cpp
+Compiling: sampleMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleMNIST.o sampleMNIST.cpp
+Linking: ../../bin/sample_mnist
+g++ -o ../../bin/sample_mnist ../../bin/chobj/sampleMNIST.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNISTAPI'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleMNISTAPI.d -MP -MT ../../bin/dchobj/sampleMNISTAPI.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMNISTAPI.cpp
+Compiling: sampleMNISTAPI.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleMNISTAPI.o sampleMNISTAPI.cpp
+Linking: ../../bin/sample_mnist_api_debug
+g++ -o ../../bin/sample_mnist_api_debug ../../bin/dchobj/sampleMNISTAPI.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleMNISTAPI.d -MP -MT ../../bin/chobj/sampleMNISTAPI.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMNISTAPI.cpp
+Compiling: sampleMNISTAPI.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleMNISTAPI.o sampleMNISTAPI.cpp
+Linking: ../../bin/sample_mnist_api
+g++ -o ../../bin/sample_mnist_api ../../bin/chobj/sampleMNISTAPI.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNISTAPI'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMovieLens'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleMovieLens.d -MP -MT ../../bin/dchobj/sampleMovieLens.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMovieLens.cpp
+Compiling: sampleMovieLens.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleMovieLens.o sampleMovieLens.cpp
+Linking: ../../bin/sample_movielens_debug
+g++ -o ../../bin/sample_movielens_debug ../../bin/dchobj/sampleMovieLens.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleMovieLens.d -MP -MT ../../bin/chobj/sampleMovieLens.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMovieLens.cpp
+Compiling: sampleMovieLens.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleMovieLens.o sampleMovieLens.cpp
+Linking: ../../bin/sample_movielens
+g++ -o ../../bin/sample_movielens ../../bin/chobj/sampleMovieLens.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMovieLens'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleOnnxMNIST'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleOnnxMNIST.d -MP -MT ../../bin/dchobj/sampleOnnxMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleOnnxMNIST.cpp
+Compiling: sampleOnnxMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleOnnxMNIST.o sampleOnnxMNIST.cpp
+Linking: ../../bin/sample_onnx_mnist_debug
+g++ -o ../../bin/sample_onnx_mnist_debug ../../bin/dchobj/sampleOnnxMNIST.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleOnnxMNIST.d -MP -MT ../../bin/chobj/sampleOnnxMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleOnnxMNIST.cpp
+Compiling: sampleOnnxMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleOnnxMNIST.o sampleOnnxMNIST.cpp
+Linking: ../../bin/sample_onnx_mnist
+g++ -o ../../bin/sample_onnx_mnist ../../bin/chobj/sampleOnnxMNIST.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleOnnxMNIST'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/samplePlugin'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/samplePlugin.d -MP -MT ../../bin/dchobj/samplePlugin.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT samplePlugin.cpp
+Compiling: samplePlugin.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/samplePlugin.o samplePlugin.cpp
+Linking: ../../bin/sample_plugin_debug
+g++ -o ../../bin/sample_plugin_debug ../../bin/dchobj/samplePlugin.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/samplePlugin.d -MP -MT ../../bin/chobj/samplePlugin.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT samplePlugin.cpp
+Compiling: samplePlugin.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/samplePlugin.o samplePlugin.cpp
+Linking: ../../bin/sample_plugin
+g++ -o ../../bin/sample_plugin ../../bin/chobj/samplePlugin.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/samplePlugin'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffPluginV2Ext'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleUffPluginV2Ext.d -MP -MT ../../bin/dchobj/sampleUffPluginV2Ext.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleUffPluginV2Ext.cpp
+Compiling: sampleUffPluginV2Ext.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleUffPluginV2Ext.o sampleUffPluginV2Ext.cpp
+Linking: ../../bin/sample_uff_plugin_v2_ext_debug
+g++ -o ../../bin/sample_uff_plugin_v2_ext_debug ../../bin/dchobj/sampleUffPluginV2Ext.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleUffPluginV2Ext.d -MP -MT ../../bin/chobj/sampleUffPluginV2Ext.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleUffPluginV2Ext.cpp
+Compiling: sampleUffPluginV2Ext.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleUffPluginV2Ext.o sampleUffPluginV2Ext.cpp
+Linking: ../../bin/sample_uff_plugin_v2_ext
+g++ -o ../../bin/sample_uff_plugin_v2_ext ../../bin/chobj/sampleUffPluginV2Ext.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffPluginV2Ext'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleReformatFreeIO'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleReformatFreeIO.d -MP -MT ../../bin/dchobj/sampleReformatFreeIO.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleReformatFreeIO.cpp
+Compiling: sampleReformatFreeIO.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleReformatFreeIO.o sampleReformatFreeIO.cpp
+Linking: ../../bin/sample_reformat_free_io_debug
+g++ -o ../../bin/sample_reformat_free_io_debug ../../bin/dchobj/sampleReformatFreeIO.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleReformatFreeIO.d -MP -MT ../../bin/chobj/sampleReformatFreeIO.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleReformatFreeIO.cpp
+Compiling: sampleReformatFreeIO.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleReformatFreeIO.o sampleReformatFreeIO.cpp
+Linking: ../../bin/sample_reformat_free_io
+g++ -o ../../bin/sample_reformat_free_io ../../bin/chobj/sampleReformatFreeIO.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleReformatFreeIO'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleSSD'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleSSD.d -MP -MT ../../bin/dchobj/sampleSSD.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleSSD.cpp
+Compiling: sampleSSD.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleSSD.o sampleSSD.cpp
+Linking: ../../bin/sample_ssd_debug
+g++ -o ../../bin/sample_ssd_debug ../../bin/dchobj/sampleSSD.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleSSD.d -MP -MT ../../bin/chobj/sampleSSD.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleSSD.cpp
+Compiling: sampleSSD.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleSSD.o sampleSSD.cpp
+Linking: ../../bin/sample_ssd
+g++ -o ../../bin/sample_ssd ../../bin/chobj/sampleSSD.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleSSD'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffMNIST'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleUffMNIST.d -MP -MT ../../bin/dchobj/sampleUffMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleUffMNIST.cpp
+Compiling: sampleUffMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleUffMNIST.o sampleUffMNIST.cpp
+Linking: ../../bin/sample_uff_mnist_debug
+g++ -o ../../bin/sample_uff_mnist_debug ../../bin/dchobj/sampleUffMNIST.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleUffMNIST.d -MP -MT ../../bin/chobj/sampleUffMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleUffMNIST.cpp
+Compiling: sampleUffMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleUffMNIST.o sampleUffMNIST.cpp
+Linking: ../../bin/sample_uff_mnist
+g++ -o ../../bin/sample_uff_mnist ../../bin/chobj/sampleUffMNIST.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffMNIST'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffSSD'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleUffSSD.d -MP -MT ../../bin/dchobj/sampleUffSSD.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleUffSSD.cpp
+Compiling: sampleUffSSD.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleUffSSD.o sampleUffSSD.cpp
+Linking: ../../bin/sample_uff_ssd_debug
+g++ -o ../../bin/sample_uff_ssd_debug ../../bin/dchobj/sampleUffSSD.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleUffSSD.d -MP -MT ../../bin/chobj/sampleUffSSD.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleUffSSD.cpp
+Compiling: sampleUffSSD.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleUffSSD.o sampleUffSSD.cpp
+Linking: ../../bin/sample_uff_ssd
+g++ -o ../../bin/sample_uff_ssd ../../bin/chobj/sampleUffSSD.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffSSD'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/trtexec'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/trtexec.d -MP -MT ../../bin/dchobj/trtexec.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT trtexec.cpp
+Compiling: trtexec.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/trtexec.o trtexec.cpp
+Linking: ../../bin/trtexec_debug
+g++ -o ../../bin/trtexec_debug ../../bin/dchobj/trtexec.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/trtexec.d -MP -MT ../../bin/chobj/trtexec.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT trtexec.cpp
+Compiling: trtexec.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/trtexec.o trtexec.cpp
+Linking: ../../bin/trtexec
+g++ -o ../../bin/trtexec ../../bin/chobj/trtexec.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+cp -f giexec ../../bin/giexec; 
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/trtexec'
+make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleNMT'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/trtUtil.d -MP -MT ../../bin/dchobj/trtUtil.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT trtUtil.cpp
+Compiling: trtUtil.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/trtUtil.o trtUtil.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleNMT.d -MP -MT ../../bin/dchobj/sampleNMT.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT sampleNMT.cpp
+Compiling: sampleNMT.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/sampleNMT.o sampleNMT.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/dataWriter.d -MP -MT ../../bin/dchobj/data/dataWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/dataWriter.cpp
+Compiling: data/dataWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/dataWriter.o data/dataWriter.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/limitedSamplesDataReader.d -MP -MT ../../bin/dchobj/data/limitedSamplesDataReader.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/limitedSamplesDataReader.cpp
+Compiling: data/limitedSamplesDataReader.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/limitedSamplesDataReader.o data/limitedSamplesDataReader.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/benchmarkWriter.d -MP -MT ../../bin/dchobj/data/benchmarkWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/benchmarkWriter.cpp
+Compiling: data/benchmarkWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/benchmarkWriter.o data/benchmarkWriter.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/textWriter.d -MP -MT ../../bin/dchobj/data/textWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/textWriter.cpp
+Compiling: data/textWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/textWriter.o data/textWriter.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/textReader.d -MP -MT ../../bin/dchobj/data/textReader.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/textReader.cpp
+Compiling: data/textReader.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/textReader.o data/textReader.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/vocabulary.d -MP -MT ../../bin/dchobj/data/vocabulary.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/vocabulary.cpp
+Compiling: data/vocabulary.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/vocabulary.o data/vocabulary.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/data/bleuScoreWriter.d -MP -MT ../../bin/dchobj/data/bleuScoreWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/bleuScoreWriter.cpp
+Compiling: data/bleuScoreWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/data/bleuScoreWriter.o data/bleuScoreWriter.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/softmaxLikelihood.d -MP -MT ../../bin/dchobj/model/softmaxLikelihood.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/softmaxLikelihood.cpp
+Compiling: model/softmaxLikelihood.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/softmaxLikelihood.o model/softmaxLikelihood.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/slpProjection.d -MP -MT ../../bin/dchobj/model/slpProjection.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/slpProjection.cpp
+Compiling: model/slpProjection.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/slpProjection.o model/slpProjection.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/debugUtil.d -MP -MT ../../bin/dchobj/model/debugUtil.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/debugUtil.cpp
+Compiling: model/debugUtil.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/debugUtil.o model/debugUtil.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/multiplicativeAlignment.d -MP -MT ../../bin/dchobj/model/multiplicativeAlignment.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/multiplicativeAlignment.cpp
+Compiling: model/multiplicativeAlignment.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/multiplicativeAlignment.o model/multiplicativeAlignment.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/contextNMT.d -MP -MT ../../bin/dchobj/model/contextNMT.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/contextNMT.cpp
+Compiling: model/contextNMT.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/contextNMT.o model/contextNMT.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/lstmEncoder.d -MP -MT ../../bin/dchobj/model/lstmEncoder.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/lstmEncoder.cpp
+Compiling: model/lstmEncoder.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/lstmEncoder.o model/lstmEncoder.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/componentWeights.d -MP -MT ../../bin/dchobj/model/componentWeights.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/componentWeights.cpp
+Compiling: model/componentWeights.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/componentWeights.o model/componentWeights.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/lstmDecoder.d -MP -MT ../../bin/dchobj/model/lstmDecoder.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/lstmDecoder.cpp
+Compiling: model/lstmDecoder.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/lstmDecoder.o model/lstmDecoder.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/slpEmbedder.d -MP -MT ../../bin/dchobj/model/slpEmbedder.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/slpEmbedder.cpp
+Compiling: model/slpEmbedder.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/slpEmbedder.o model/slpEmbedder.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/slpAttention.d -MP -MT ../../bin/dchobj/model/slpAttention.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/slpAttention.cpp
+Compiling: model/slpAttention.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/slpAttention.o model/slpAttention.cpp
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/dchobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/dchobj/model; fi; :
+g++ -MM -MF ../../bin/dchobj/model/beamSearchPolicy.d -MP -MT ../../bin/dchobj/model/beamSearchPolicy.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/beamSearchPolicy.cpp
+Compiling: model/beamSearchPolicy.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -g -c -o ../../bin/dchobj/model/beamSearchPolicy.o model/beamSearchPolicy.cpp
+Linking: ../../bin/sample_nmt_debug
+g++ -o ../../bin/sample_nmt_debug ../../bin/dchobj/trtUtil.o ../../bin/dchobj/sampleNMT.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o ../../bin/dchobj/data/dataWriter.o ../../bin/dchobj/data/limitedSamplesDataReader.o ../../bin/dchobj/data/benchmarkWriter.o ../../bin/dchobj/data/textWriter.o ../../bin/dchobj/data/textReader.o ../../bin/dchobj/data/vocabulary.o ../../bin/dchobj/data/bleuScoreWriter.o ../../bin/dchobj/model/softmaxLikelihood.o ../../bin/dchobj/model/slpProjection.o ../../bin/dchobj/model/debugUtil.o ../../bin/dchobj/model/multiplicativeAlignment.o ../../bin/dchobj/model/contextNMT.o ../../bin/dchobj/model/lstmEncoder.o ../../bin/dchobj/model/componentWeights.o ../../bin/dchobj/model/lstmDecoder.o ../../bin/dchobj/model/slpEmbedder.o ../../bin/dchobj/model/slpAttention.o ../../bin/dchobj/model/beamSearchPolicy.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/trtUtil.d -MP -MT ../../bin/chobj/trtUtil.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT trtUtil.cpp
+Compiling: trtUtil.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/trtUtil.o trtUtil.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/sampleNMT.d -MP -MT ../../bin/chobj/sampleNMT.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT sampleNMT.cpp
+Compiling: sampleNMT.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/sampleNMT.o sampleNMT.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/dataWriter.d -MP -MT ../../bin/chobj/data/dataWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/dataWriter.cpp
+Compiling: data/dataWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/dataWriter.o data/dataWriter.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/limitedSamplesDataReader.d -MP -MT ../../bin/chobj/data/limitedSamplesDataReader.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/limitedSamplesDataReader.cpp
+Compiling: data/limitedSamplesDataReader.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/limitedSamplesDataReader.o data/limitedSamplesDataReader.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/benchmarkWriter.d -MP -MT ../../bin/chobj/data/benchmarkWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/benchmarkWriter.cpp
+Compiling: data/benchmarkWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/benchmarkWriter.o data/benchmarkWriter.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/textWriter.d -MP -MT ../../bin/chobj/data/textWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/textWriter.cpp
+Compiling: data/textWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/textWriter.o data/textWriter.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/textReader.d -MP -MT ../../bin/chobj/data/textReader.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/textReader.cpp
+Compiling: data/textReader.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/textReader.o data/textReader.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/vocabulary.d -MP -MT ../../bin/chobj/data/vocabulary.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/vocabulary.cpp
+Compiling: data/vocabulary.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/vocabulary.o data/vocabulary.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/data/bleuScoreWriter.d -MP -MT ../../bin/chobj/data/bleuScoreWriter.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT data/bleuScoreWriter.cpp
+Compiling: data/bleuScoreWriter.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/data/bleuScoreWriter.o data/bleuScoreWriter.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/softmaxLikelihood.d -MP -MT ../../bin/chobj/model/softmaxLikelihood.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/softmaxLikelihood.cpp
+Compiling: model/softmaxLikelihood.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/softmaxLikelihood.o model/softmaxLikelihood.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/slpProjection.d -MP -MT ../../bin/chobj/model/slpProjection.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/slpProjection.cpp
+Compiling: model/slpProjection.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/slpProjection.o model/slpProjection.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/debugUtil.d -MP -MT ../../bin/chobj/model/debugUtil.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/debugUtil.cpp
+Compiling: model/debugUtil.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/debugUtil.o model/debugUtil.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/multiplicativeAlignment.d -MP -MT ../../bin/chobj/model/multiplicativeAlignment.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/multiplicativeAlignment.cpp
+Compiling: model/multiplicativeAlignment.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/multiplicativeAlignment.o model/multiplicativeAlignment.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/contextNMT.d -MP -MT ../../bin/chobj/model/contextNMT.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/contextNMT.cpp
+Compiling: model/contextNMT.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/contextNMT.o model/contextNMT.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/lstmEncoder.d -MP -MT ../../bin/chobj/model/lstmEncoder.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/lstmEncoder.cpp
+Compiling: model/lstmEncoder.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/lstmEncoder.o model/lstmEncoder.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/componentWeights.d -MP -MT ../../bin/chobj/model/componentWeights.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/componentWeights.cpp
+Compiling: model/componentWeights.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/componentWeights.o model/componentWeights.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/lstmDecoder.d -MP -MT ../../bin/chobj/model/lstmDecoder.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/lstmDecoder.cpp
+Compiling: model/lstmDecoder.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/lstmDecoder.o model/lstmDecoder.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/slpEmbedder.d -MP -MT ../../bin/chobj/model/slpEmbedder.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/slpEmbedder.cpp
+Compiling: model/slpEmbedder.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/slpEmbedder.o model/slpEmbedder.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/slpAttention.d -MP -MT ../../bin/chobj/model/slpAttention.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/slpAttention.cpp
+Compiling: model/slpAttention.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/slpAttention.o model/slpAttention.cpp
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi;  if [ ! -d ../../bin/chobj/data ]; then mkdir -p ../../bin/chobj/data; fi;  if [ ! -d ../../bin/chobj/model ]; then mkdir -p ../../bin/chobj/model; fi; :
+g++ -MM -MF ../../bin/chobj/model/beamSearchPolicy.d -MP -MT ../../bin/chobj/model/beamSearchPolicy.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT model/beamSearchPolicy.cpp
+Compiling: model/beamSearchPolicy.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -I"." -D_REENTRANT -c -o ../../bin/chobj/model/beamSearchPolicy.o model/beamSearchPolicy.cpp
+Linking: ../../bin/sample_nmt
+g++ -o ../../bin/sample_nmt ../../bin/chobj/trtUtil.o ../../bin/chobj/sampleNMT.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o ../../bin/chobj/data/dataWriter.o ../../bin/chobj/data/limitedSamplesDataReader.o ../../bin/chobj/data/benchmarkWriter.o ../../bin/chobj/data/textWriter.o ../../bin/chobj/data/textReader.o ../../bin/chobj/data/vocabulary.o ../../bin/chobj/data/bleuScoreWriter.o ../../bin/chobj/model/softmaxLikelihood.o ../../bin/chobj/model/slpProjection.o ../../bin/chobj/model/debugUtil.o ../../bin/chobj/model/multiplicativeAlignment.o ../../bin/chobj/model/contextNMT.o ../../bin/chobj/model/lstmEncoder.o ../../bin/chobj/model/componentWeights.o ../../bin/chobj/model/lstmDecoder.o ../../bin/chobj/model/slpEmbedder.o ../../bin/chobj/model/slpAttention.o ../../bin/chobj/model/beamSearchPolicy.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleNMT'
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples'
+make: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples'
+> Shell Completed (exit code = 0)
+
+01:20:49 Build Finished (took 6m:19s.592ms)
+

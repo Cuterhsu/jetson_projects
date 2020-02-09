@@ -1,0 +1,21 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../bin/chobj/model/beamSearchPolicy.o \
+../bin/chobj/model/componentWeights.o \
+../bin/chobj/model/contextNMT.o \
+../bin/chobj/model/debugUtil.o \
+../bin/chobj/model/lstmDecoder.o \
+../bin/chobj/model/lstmEncoder.o \
+../bin/chobj/model/multiplicativeAlignment.o \
+../bin/chobj/model/slpAttention.o \
+../bin/chobj/model/slpEmbedder.o \
+../bin/chobj/model/slpProjection.o \
+../bin/chobj/model/softmaxLikelihood.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

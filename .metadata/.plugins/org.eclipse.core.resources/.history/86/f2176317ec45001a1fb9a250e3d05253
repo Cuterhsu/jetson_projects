@@ -1,0 +1,42 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../samples/sampleNMT/data/benchmarkWriter.cpp \
+../samples/sampleNMT/data/bleuScoreWriter.cpp \
+../samples/sampleNMT/data/dataWriter.cpp \
+../samples/sampleNMT/data/limitedSamplesDataReader.cpp \
+../samples/sampleNMT/data/textReader.cpp \
+../samples/sampleNMT/data/textWriter.cpp \
+../samples/sampleNMT/data/vocabulary.cpp 
+
+OBJS += \
+./samples/sampleNMT/data/benchmarkWriter.o \
+./samples/sampleNMT/data/bleuScoreWriter.o \
+./samples/sampleNMT/data/dataWriter.o \
+./samples/sampleNMT/data/limitedSamplesDataReader.o \
+./samples/sampleNMT/data/textReader.o \
+./samples/sampleNMT/data/textWriter.o \
+./samples/sampleNMT/data/vocabulary.o 
+
+CPP_DEPS += \
+./samples/sampleNMT/data/benchmarkWriter.d \
+./samples/sampleNMT/data/bleuScoreWriter.d \
+./samples/sampleNMT/data/dataWriter.d \
+./samples/sampleNMT/data/limitedSamplesDataReader.d \
+./samples/sampleNMT/data/textReader.d \
+./samples/sampleNMT/data/textWriter.d \
+./samples/sampleNMT/data/vocabulary.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+samples/sampleNMT/data/%.o: ../samples/sampleNMT/data/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

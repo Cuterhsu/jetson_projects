@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.nvidia.cuda.remote.launch.connectlaunch">
+    <stringAttribute key="breakOnError" value="ignore"/>
+    <booleanAttribute key="com.nvidia.cuda.debug.ui.isQNX" value="false"/>
+    <booleanAttribute key="com.nvidia.cuda.remote.launch.temporaryExe" value="false"/>
+    <stringAttribute key="com.nvidia.cuda.remote.launch.util.ICudaRemoteDebugConstants.executableTransfer" value="Download"/>
+    <booleanAttribute key="lc.enable.memcheck" value="false"/>
+    <booleanAttribute key="lc.extrapolate" value="true"/>
+    <booleanAttribute key="lc.kernelevents" value="false"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.AUTO_SOLIB" value="true"/>
+    <listAttribute key="org.eclipse.cdt.dsf.gdb.AUTO_SOLIB_LIST"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="${cuda_tk_bin:/particles}/cuda-gdb"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.GDB_INIT" value=".cuda-gdbinit"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.HOST" value="192.168.55.1"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.PORT" value="2345"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.REMOTE_TCP" value="true"/>
+    <listAttribute key="org.eclipse.cdt.dsf.gdb.SOLIB_PATH"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="gdbserver"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="particles"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.nvidia.cuda.ide.nine_zero.configuration.debug.1540660835"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+    <stringAttribute key="org.eclipse.debug.core.ATTR_GDBSERVER_PORT" value="2345"/>
+    <stringAttribute key="org.eclipse.debug.core.ATTR_TARGET_PATH" value=""/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/particles"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.core.REMOTE_TCP" value="cuterbot"/>
+    <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+</launchConfiguration>

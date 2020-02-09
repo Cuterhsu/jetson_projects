@@ -1,0 +1,103 @@
+02:45:36 **** Incremental Build of configuration Default for project samples ****
+make all -C /home/cuterbot/sync_projects/tensorrtSamples/samples 
+make: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleCharRNN'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleCharRNN'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleDynamicReshape'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleDynamicReshape'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleFasterRCNN'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleFasterRCNN'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleGoogleNet'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleGoogleNet'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8API'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8API'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMLP'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMLP'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNISTAPI'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNISTAPI'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleNMT'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleNMT'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMovieLens'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMovieLens'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleOnnxMNIST'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleOnnxMNIST'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/samplePlugin'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/samplePlugin'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffPluginV2Ext'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffPluginV2Ext'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleReformatFreeIO'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+make[1]: Nothing to be done for 'all'.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleReformatFreeIO'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleSSD'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleSSD'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffMNIST'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffMNIST'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffSSD'
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffSSD'
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/trtexec'
+../Makefile.config:7: CUDA_INSTALL_DIR variable is not specified, using /usr/local/cuda by default, use CUDA_INSTALL_DIR=<cuda_directory> to change.
+../Makefile.config:10: CUDNN_INSTALL_DIR variable is not specified, using $CUDA_INSTALL_DIR by default, use CUDNN_INSTALL_DIR=<cudnn_directory> to change.
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/trtexec'
+make: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples'
+> Shell Completed (exit code = 0)
+
+02:45:38 Build Finished (took 1s.436ms)
+

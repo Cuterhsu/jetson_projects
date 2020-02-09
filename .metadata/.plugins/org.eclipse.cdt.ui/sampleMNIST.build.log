@@ -1,0 +1,10 @@
+20:47:05 **** Incremental Build of configuration Default for project sampleMNIST ****
+make all -C /home/cuterbot/sync_projects/sampleMNIST 
+make: Entering directory '/home/cuterbot/sync_projects/sampleMNIST'
+Makefile:5: ../Makefile.config: No such file or directory
+make: Leaving directory '/home/cuterbot/sync_projects/sampleMNIST'
+make: *** No rule to make target '../Makefile.config'.  Stop.
+> Shell Completed (exit code = 2)
+
+20:47:05 Build Finished (took 181ms)
+

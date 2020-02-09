@@ -1,0 +1,9 @@
+connectionTypeId=org.eclipse.remote.JSch
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_ADDRESS_ATTR=192.168.55.1
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_IS_PASSWORD_ATTR=true
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_LOGIN_SHELL_COMMAND_ATTR=/bin/bash -l -c '{0}'
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_PORT_ATTR=22
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_TIMEOUT_ATTR=0
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_USERNAME_ATTR=cuterbot
+connections/org.eclipse.remote.JSch/cuterbot/JSCH_USE_LOGIN_SHELL_ATTR=true
+eclipse.preferences.version=1

@@ -1,0 +1,43 @@
+01:03:30 **** Build of configuration Debug for project partcles ****
+make all -C /home/cuterbot/sync_projects/particles/Debug 
+make: Entering directory '/home/cuterbot/sync_projects/particles/Debug'
+Building file: ../src/particleSystem.cpp
+Invoking: NVCC Compiler
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 -ccbin aarch64-linux-gnu-g++ -gencode arch=compute_50,code=sm_50 -m64 -odir "src" -M -o "src/particleSystem.d" "../src/particleSystem.cpp"
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 --compile -m64 -ccbin aarch64-linux-gnu-g++  -x c++ -o  "src/particleSystem.o" "../src/particleSystem.cpp"
+Finished building: ../src/particleSystem.cpp
+ 
+Building file: ../src/particleSystem_cuda.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 -ccbin aarch64-linux-gnu-g++ -gencode arch=compute_50,code=sm_50 -m64 -odir "src" -M -o "src/particleSystem_cuda.d" "../src/particleSystem_cuda.cu"
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_50,code=compute_50 -gencode arch=compute_50,code=sm_50 -m64 -ccbin aarch64-linux-gnu-g++  -x cu -o  "src/particleSystem_cuda.o" "../src/particleSystem_cuda.cu"
+Finished building: ../src/particleSystem_cuda.cu
+ 
+Building file: ../src/particles.cpp
+Invoking: NVCC Compiler
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 -ccbin aarch64-linux-gnu-g++ -gencode arch=compute_50,code=sm_50 -m64 -odir "src" -M -o "src/particles.d" "../src/particles.cpp"
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 --compile -m64 -ccbin aarch64-linux-gnu-g++  -x c++ -o  "src/particles.o" "../src/particles.cpp"
+Finished building: ../src/particles.cpp
+ 
+Building file: ../src/render_particles.cpp
+Invoking: NVCC Compiler
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 -ccbin aarch64-linux-gnu-g++ -gencode arch=compute_50,code=sm_50 -m64 -odir "src" -M -o "src/render_particles.d" "../src/render_particles.cpp"
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 --compile -m64 -ccbin aarch64-linux-gnu-g++  -x c++ -o  "src/render_particles.o" "../src/render_particles.cpp"
+Finished building: ../src/render_particles.cpp
+ 
+Building file: ../src/shaders.cpp
+Invoking: NVCC Compiler
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 -ccbin aarch64-linux-gnu-g++ -gencode arch=compute_50,code=sm_50 -m64 -odir "src" -M -o "src/shaders.d" "../src/shaders.cpp"
+/usr/local/cuda-10.0/bin/nvcc -I"/usr/local/cuda-10.0/samples/5_Simulations" -I"/usr/local/cuda-10.0/samples/common/inc" -I"/home/cuter/jetson_workspace/partcles" -G -g -O0 --compile -m64 -ccbin aarch64-linux-gnu-g++  -x c++ -o  "src/shaders.o" "../src/shaders.cpp"
+Finished building: ../src/shaders.cpp
+ 
+Building target: partcles
+Invoking: NVCC Linker
+/usr/local/cuda-10.0/bin/nvcc --cudart static -L"/usr/local/cuda-10.0/samples/common/lib/linux/x86_64" -lGL -lGLU -lglut  --relocatable-device-code=false -gencode arch=compute_50,code=compute_50 -gencode arch=compute_50,code=sm_50 -m64 -ccbin aarch64-linux-gnu-g++ -link -o  "partcles"  ./src/particleSystem.o ./src/particleSystem_cuda.o ./src/particles.o ./src/render_particles.o ./src/shaders.o  /usr/local/cuda-10.0/samples/common/lib/linux/aarch64/libGLEW.a 
+Finished building target: partcles
+ 
+make: Leaving directory '/home/cuterbot/sync_projects/particles/Debug'
+> Shell Completed (exit code = 0)
+
+01:04:35 Build Finished (took 1m:5s.619ms)
+

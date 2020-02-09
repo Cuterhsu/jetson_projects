@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../samples/sampleNMT/model/beamSearchPolicy.cpp \
+../samples/sampleNMT/model/componentWeights.cpp \
+../samples/sampleNMT/model/contextNMT.cpp \
+../samples/sampleNMT/model/debugUtil.cpp \
+../samples/sampleNMT/model/lstmDecoder.cpp \
+../samples/sampleNMT/model/lstmEncoder.cpp \
+../samples/sampleNMT/model/multiplicativeAlignment.cpp \
+../samples/sampleNMT/model/slpAttention.cpp \
+../samples/sampleNMT/model/slpEmbedder.cpp \
+../samples/sampleNMT/model/slpProjection.cpp \
+../samples/sampleNMT/model/softmaxLikelihood.cpp 
+
+OBJS += \
+./samples/sampleNMT/model/beamSearchPolicy.o \
+./samples/sampleNMT/model/componentWeights.o \
+./samples/sampleNMT/model/contextNMT.o \
+./samples/sampleNMT/model/debugUtil.o \
+./samples/sampleNMT/model/lstmDecoder.o \
+./samples/sampleNMT/model/lstmEncoder.o \
+./samples/sampleNMT/model/multiplicativeAlignment.o \
+./samples/sampleNMT/model/slpAttention.o \
+./samples/sampleNMT/model/slpEmbedder.o \
+./samples/sampleNMT/model/slpProjection.o \
+./samples/sampleNMT/model/softmaxLikelihood.o 
+
+CPP_DEPS += \
+./samples/sampleNMT/model/beamSearchPolicy.d \
+./samples/sampleNMT/model/componentWeights.d \
+./samples/sampleNMT/model/contextNMT.d \
+./samples/sampleNMT/model/debugUtil.d \
+./samples/sampleNMT/model/lstmDecoder.d \
+./samples/sampleNMT/model/lstmEncoder.d \
+./samples/sampleNMT/model/multiplicativeAlignment.d \
+./samples/sampleNMT/model/slpAttention.d \
+./samples/sampleNMT/model/slpEmbedder.d \
+./samples/sampleNMT/model/slpProjection.d \
+./samples/sampleNMT/model/softmaxLikelihood.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+samples/sampleNMT/model/%.o: ../samples/sampleNMT/model/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

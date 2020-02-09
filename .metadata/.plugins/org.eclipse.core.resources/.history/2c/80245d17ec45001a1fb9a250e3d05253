@@ -1,0 +1,17 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../bin/chobj/data/benchmarkWriter.o \
+../bin/chobj/data/bleuScoreWriter.o \
+../bin/chobj/data/dataWriter.o \
+../bin/chobj/data/limitedSamplesDataReader.o \
+../bin/chobj/data/textReader.o \
+../bin/chobj/data/textWriter.o \
+../bin/chobj/data/vocabulary.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+
