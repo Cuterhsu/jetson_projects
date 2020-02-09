@@ -98955,7 +98955,7 @@
 <includePath path="/usr/include"/>
 <includePath path="/home/cuter/jetson_workspace/tensorrtSamples/samples/common"/>
 <includePath path="/usr/local/cuda/include"/>
-<includePath path="/home/cuter/jetson_workspace/tensorrtSamples/samples/sampleNMT"/>
+<definedSymbol symbol="_REENTRANT=1"/>
 <definedSymbol symbol="__CUDA_RUNTIME_H__="/>
 <definedSymbol symbol="CUDA_DOUBLE_MATH_FUNCTIONS="/>
 <definedSymbol symbol="__CUDA_ARCH__=500"/>
@@ -99368,7 +99368,7 @@
 <includePath path="/usr/include"/>
 <includePath path="/home/cuter/jetson_workspace/tensorrtSamples/samples/common"/>
 <includePath path="/usr/local/cuda/include"/>
-<includePath path="/home/cuter/jetson_workspace/tensorrtSamples/samples/sampleNMT"/>
+<definedSymbol symbol="_REENTRANT=1"/>
 <definedSymbol symbol="__CUDACC__="/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=201402L"/>
@@ -99776,7 +99776,7 @@
 <includePath path="/usr/include"/>
 <includePath path="/home/cuter/jetson_workspace/tensorrtSamples/samples/common"/>
 <includePath path="/usr/local/cuda/include"/>
-<includePath path="/home/cuter/jetson_workspace/tensorrtSamples/samples/sampleNMT"/>
+<definedSymbol symbol="_REENTRANT=1"/>
 <definedSymbol symbol="__CUDACC__="/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=201402L"/>

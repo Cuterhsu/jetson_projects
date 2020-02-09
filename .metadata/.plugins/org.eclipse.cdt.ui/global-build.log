@@ -1,123 +1,71 @@
-01:27:23 **** Clean-only build of configuration Default for project tensorrtSamples ****
-make clean -C /home/cuterbot/sync_projects/tensorrtSamples 
+01:30:30 **** Build of configuration Default for project tensorrtSamples ****
+make sampleMnist -C /home/cuterbot/sync_projects/tensorrtSamples 
 make: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples'
-cd samples && make clean
-make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples'
-make clean -C sampleCharRNN &&  make clean -C sampleDynamicReshape &&  make clean -C sampleFasterRCNN &&  make clean -C sampleGoogleNet &&  make clean -C sampleINT8 &&  make clean -C sampleINT8API &&  make clean -C sampleMLP &&  make clean -C sampleMNIST &&  make clean -C sampleMNISTAPI &&  make clean -C sampleMovieLens &&  make clean -C sampleOnnxMNIST &&  make clean -C samplePlugin &&  make clean -C sampleUffPluginV2Ext &&  make clean -C sampleReformatFreeIO &&  make clean -C sampleSSD &&  make clean -C sampleUffMNIST &&  make clean -C sampleUffSSD &&  make clean -C trtexec &&  make clean -C sampleNMT && :
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleCharRNN'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_char_rnn ../../bin/sample_char_rnn_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleCharRNN'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleDynamicReshape'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_dynamic_reshape ../../bin/sample_dynamic_reshape_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleDynamicReshape'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleFasterRCNN'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_fasterRCNN ../../bin/sample_fasterRCNN_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleFasterRCNN'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleGoogleNet'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_googlenet ../../bin/sample_googlenet_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleGoogleNet'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_int8 ../../bin/sample_int8_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8API'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_int8_api ../../bin/sample_int8_api_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleINT8API'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMLP'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_mlp ../../bin/sample_mlp_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMLP'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_mnist ../../bin/sample_mnist_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNISTAPI'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_mnist_api ../../bin/sample_mnist_api_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNISTAPI'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMovieLens'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_movielens ../../bin/sample_movielens_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMovieLens'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleOnnxMNIST'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_onnx_mnist ../../bin/sample_onnx_mnist_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleOnnxMNIST'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/samplePlugin'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_plugin ../../bin/sample_plugin_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/samplePlugin'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffPluginV2Ext'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_uff_plugin_v2_ext ../../bin/sample_uff_plugin_v2_ext_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffPluginV2Ext'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleReformatFreeIO'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_reformat_free_io ../../bin/sample_reformat_free_io_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleReformatFreeIO'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleSSD'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_ssd ../../bin/sample_ssd_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleSSD'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffMNIST'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_uff_mnist ../../bin/sample_uff_mnist_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffMNIST'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffSSD'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_uff_ssd ../../bin/sample_uff_ssd_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleUffSSD'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/trtexec'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/trtexec ../../bin/trtexec_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/trtexec'
-make[2]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleNMT'
-Cleaning...
-rm -rf ../../bin/chobj ../../bin/dchobj ../../bin/sample_nmt ../../bin/sample_nmt_debug
-if [ -d ../../bin/chobj/../common ]; then rm -rf ../../bin/chobj/../common; fi;  if [ -d ../../bin/chobj/data ]; then rm -rf ../../bin/chobj/data; fi;  if [ -d ../../bin/chobj/model ]; then rm -rf ../../bin/chobj/model; fi; :
-if [ -d ../../bin/dchobj/../common ]; then rm -rf ../../bin/dchobj/../common; fi;  if [ -d ../../bin/dchobj/data ]; then rm -rf ../../bin/dchobj/data; fi;  if [ -d ../../bin/dchobj/model ]; then rm -rf ../../bin/dchobj/model; fi; :
-make[2]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleNMT'
-make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples'
+samples=sampleMNIST
+cd samples/sampleMNIST; make 
+make[1]: Entering directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
+if [ ! -d ../../bin/dchobj ]; then mkdir -p ../../bin/dchobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/dchobj/../common; fi; :
+g++ -MM -MF ../../bin/dchobj/sampleMNIST.d -MP -MT ../../bin/dchobj/sampleMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMNIST.cpp
+Compiling: sampleMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -g -c -o ../../bin/dchobj/sampleMNIST.o sampleMNIST.cpp
+Linking: ../../bin/sample_mnist_debug
+g++ -o ../../bin/sample_mnist_debug ../../bin/dchobj/sampleMNIST.o ../../bin/dchobj/../common/sampleOptions.o ../../bin/dchobj/../common/logger.o ../../bin/dchobj/../common/getOptions.o ../../bin/dchobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+if [ ! -d ../../bin/chobj ]; then mkdir -p ../../bin/chobj; fi
+if [ ! -d ../../bin/chobj/../common ]; then mkdir -p ../../bin/chobj/../common; fi; :
+g++ -MM -MF ../../bin/chobj/sampleMNIST.d -MP -MT ../../bin/chobj/sampleMNIST.o -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT sampleMNIST.cpp
+Compiling: sampleMNIST.cpp
+g++ -Wall -Wno-deprecated-declarations -std=c++11  -I"../common" -I"/usr/local/cuda/include" -I"/usr/local/cuda/include" -I"../include" -I"../../include" -D_REENTRANT -c -o ../../bin/chobj/sampleMNIST.o sampleMNIST.cpp
+Linking: ../../bin/sample_mnist
+g++ -o ../../bin/sample_mnist ../../bin/chobj/sampleMNIST.o ../../bin/chobj/../common/sampleOptions.o ../../bin/chobj/../common/logger.o ../../bin/chobj/../common/getOptions.o ../../bin/chobj/../common/sampleEngines.o  -L"/usr/local/cuda/lib64" -L"/usr/local/cuda/lib64" -L"../lib" -L"../../lib" -L../../bin -Wl,--start-group -lnvinfer -lnvparsers -lnvinfer_plugin -lnvonnxparser -lcudnn -lcublas -lcudart -lrt -ldl -lpthread -Wl,--end-group
+# Copy every EXTRA_FILE of this sample to bin dir
+make[1]: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples/samples/sampleMNIST'
+cd bin; ./sample_mnist
+&&&& RUNNING TensorRT.sample_mnist # ./sample_mnist
+[01/10/2020-01:30:42] [I] Building and running a GPU inference engine for MNIST
+[01/10/2020-01:30:47] [I] [TRT] Detected 1 inputs and 1 output network tensors.
+[01/10/2020-01:30:47] [I] Input:
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@=   ++++#++=*@@@@@
+@@@@@@@@#.            *@@@@@
+@@@@@@@@=             *@@@@@
+@@@@@@@@.   .. ...****%@@@@@
+@@@@@@@@: .%@@#@@@@@@@@@@@@@
+@@@@@@@%  -@@@@@@@@@@@@@@@@@
+@@@@@@@%  -@@*@@@*@@@@@@@@@@
+@@@@@@@#  :#- ::. ::=@@@@@@@
+@@@@@@@-             -@@@@@@
+@@@@@@%.              *@@@@@
+@@@@@@#     :==*+==   *@@@@@
+@@@@@@%---%%@@@@@@@.  *@@@@@
+@@@@@@@@@@@@@@@@@@@+  *@@@@@
+@@@@@@@@@@@@@@@@@@@=  *@@@@@
+@@@@@@@@@@@@@@@@@@*   *@@@@@
+@@@@@%+%@@@@@@@@%.   .%@@@@@
+@@@@@*  .******=    -@@@@@@@
+@@@@@*             .#@@@@@@@
+@@@@@*            =%@@@@@@@@
+@@@@@@%#+++=     =@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[01/10/2020-01:30:47] [I] Output:
+0: 
+1: 
+2: 
+3: 
+4: 
+5: **********
+6: 
+7: 
+8: 
+9: 
+
+&&&& PASSED TensorRT.sample_mnist # ./sample_mnist
 make: Leaving directory '/home/cuterbot/sync_projects/tensorrtSamples'
 > Shell Completed (exit code = 0)
